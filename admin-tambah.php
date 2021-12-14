@@ -290,7 +290,7 @@
                                         </div>
                                     </a> -->
                                     <div class="col-auto">
-                                        <img src="{{ asset('/img/donat-gula.jpg') }}" width="200" height="150">
+                                        <img src="./img/donat-gula.jpg" width="200" height="150">
                                     </div>
                                 </div>
                             </div>
@@ -311,7 +311,7 @@
                                     </div>
                                     
                                 <div class="col-auto">
-                                        <img src="{{ asset('/img/kue-bolu-manis.jpg') }}" width="200" height="150">
+                                        <img src="./img/kue-bolu-manis.jpg" width="200" height="150">
                                 </div>
                             </div>
                         </div>
@@ -330,7 +330,7 @@
                                         Edit</div>
                                 </div>
                                 <div class="col-auto">
-                                        <img src="{{ asset('/img/kue-sus.jpg') }}" width="200" height="150">
+                                        <img src="./img/kue-sus.jpg" width="200" height="150">
                                 </div>
                             </div>
                         </div>
@@ -349,7 +349,7 @@
                                         Edit</div>
                                 </div>
                                 <div class="col-auto">
-                                        <img src="{{ asset('/img/onde-onde.jpg') }}" width="200" height="150">
+                                        <img src="./img/onde-onde.jpg" width="200" height="150">
                                 </div>
                             </div>
                         </div>
