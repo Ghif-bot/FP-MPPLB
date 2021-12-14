@@ -44,7 +44,15 @@
 <body class="leading-normal tracking-normal text-white gradient" style="font-family: 'Source Sans Pro', sans-serif; background: linear-gradient(90deg, #F6E5A0 70%, #FED99B 100%);">
 
     <div class="container">
-
+        <?php 
+        if(isset($_GET['pesan'])){
+            if($_GET['pesan=gagal']){
+                echo "<div class='alert alert-danger' role='alert' align='center'>Silahkan cek password dan email anda</div>";
+            }elseif($_GET['pesan=berhasil']){
+                echo "<div class='alert alert-success role='alert' align='center'>Berhasil registrasi, silahkan anda login</div>";
+            }
+        }
+        ?>
         <!-- Outer Row -->
         <div class="row justify-content-center">
 
@@ -63,20 +71,20 @@
                                         <img src="img/logo.jpg" width="100" height="100">
                                         <br><br>
                                     </div>
-                                    <form class="user">
+                                    <form class="user" method="post" action="./php/check_login.php">
                                         <div class="form-group">
                                             <input type="email" class="form-control form-control-user"
                                                 id="exampleInputEmail" aria-describedby="emailHelp"
-                                                placeholder="Enter Email Address...">
+                                                name="email" placeholder="Enter Email Address...">
                                         </div>
                                         <div class="form-group">
                                             <input type="password" class="form-control form-control-user"
-                                                id="exampleInputPassword" placeholder="Password">
+                                                name="password" id="exampleInputPassword" placeholder="Password">
                                         </div>
                                         
-                                        <a href="home.php" class="btn btn-primary btn-user btn-block">
+                                        <button type="submit" class="btn btn-primary btn-user btn-block">
                                             Login
-                                        </a>
+                                        </button>
                                         <hr>
                                         
                                         

@@ -68,7 +68,7 @@
         <ul>
           <li><a class="nav-link scrollto" href="#portfolio">Home</a></li>
           <li><a class="nav-link scrollto" href="#">Profil</a></li>
-          <li><a class="nav-link scrollto" href="/">Log Out</a></li>
+          <li><a class="nav-link scrollto" href="./php/check_logout.php">Log Out</a></li>
           <li><a class="getstarted scrollto" href="/daftar">Daftar Pesanan</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -77,6 +77,14 @@
     </div>
   </header><!-- End Header -->
 
+  <?php 
+      session_start();
+        if(isset($_GET['pesan'])){
+            if($_GET['pesan=berhasil']){
+                echo "<div class='alert alert-success role='alert' align='center'>Berhasil Login</div>";
+            }
+        }
+        ?>
   <main id="main">
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio">
