@@ -338,96 +338,35 @@
 
             <!-- Begin Page Content -->
             <div class="container-fluid">
-            <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                        
-                        <a href="tambah.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm"><i
-                                class="fas fa-plus fa-sm text-white-50"></i> Tambah Produk</a>
-                    </div>    
-            <div class="row">
-                <div class="col-xl-3 col-md-6 mb-4">
-                    <div class="card border-left-primary shadow h-100 py-2">
-                        <div class="card-body">
-                            <div class="row no-gutters align-items-center">
-                                <div class="col mr-2">
-                                    
-                                    <a href="#">
-                                    <div class="h5 mb-0 font-weight-bold text-gray-800">Produk A</div>
-                                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                        Edit</div>
-                                    </div>
-                                    </a>
-                                    <!-- <a href="whatsapp://send?abid=phonenumber&text=Hello%2C%20World!">Send Message</a>
-                                        <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                            Hubungi Penjual</div>
-                                        </div>
-                                    </a> -->
-                                    <div class="col-auto">
-                                        <img src="{{ asset('/img/donat-gula.jpg') }}" width="200" height="150">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                </div>
-                <div class="col-xl-3 col-md-6 mb-4">
-                    <a href="#">
-                    <div class="card border-left-success shadow h-100 py-2">
-                    <!-- <div class="card border-left-primary shadow h-100 py-2"> -->
-                        <div class="card-body">
-                            <div class="row no-gutters align-items-center">
-                                
-                              <div class="col mr-2">
-                                  
-                                    <div class="h5 mb-0 font-weight-bold text-gray-800">Produk B</div>
-                                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                        Edit</div>
-                                    </div>
-                                    
-                                <div class="col-auto">
-                                        <img src="{{ asset('/img/kue-bolu-manis.jpg') }}" width="200" height="150">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    </a>
-                </div>
-                <div class="col-xl-3 col-md-6 mb-4">
-                    <a href="#">
-                    <div class="card border-left-info shadow h-100 py-2">
-                    <!-- <div class="card border-left-primary shadow h-100 py-2"> -->
-                        <div class="card-body">
-                            <div class="row no-gutters align-items-center">
-                                <div class="col mr-2">
-                                    <div class="h5 mb-0 font-weight-bold text-gray-800">Produk C</div>
-                                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                        Edit</div>
-                                </div>
-                                <div class="col-auto">
-                                        <img src="{{ asset('/img/kue-sus.jpg') }}" width="200" height="150">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    </a>
-                </div>
-                <div class="col-xl-3 col-md-6 mb-4">
-                    <a href="#">
-                    <div class="card border-left-warning shadow h-100 py-2">
-                    <!-- <div class="card border-left-primary shadow h-100 py-2"> -->
-                        <div class="card-body">
-                            <div class="row no-gutters align-items-center">
-                                <div class="col mr-2">
-                                    <div class="h5 mb-0 font-weight-bold text-gray-800">Produk D</div>
-                                    <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
-                                        Edit</div>
-                                </div>
-                                <div class="col-auto">
-                                        <img src="{{ asset('/img/onde-onde.jpg') }}" width="200" height="150">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    </a>
-                </div>
+            <h1>Tambah Produk</h1>  
+            <form method="post" action="simpan.php" enctype="multipart/form-data">  
+                <table cellpadding="8">  
+                    <tr>    
+                        <td>Nama Produk</td>    
+                        <td><input type="text" name="nama"></td>  
+                    </tr>  
+                    <tr>    
+                        <td>Deskripsi</td>    
+                        <td><textarea name="descr"></textarea></td>  
+                    </tr>  
+                    <tr>    
+                        <td>Harga</td>
+                        <td><input type="text" name="harga"></td>      
+                    </tr>  
+                    <tr>    
+                        <td>Foto</td>    
+                        <td><input type="file" name="foto"></td>  
+                    </tr>  
+                    <tr>    
+                        <td>no-hp</td>    
+                        <td><input type="text" name="telp"></td>  
+                    </tr>  
+                </table>    
+                <hr>  
+                <input type="submit" value="Simpan">  
+                <a href="admin-tambah.php"><input type="button" value="Batal"></a>  
+            </form>
+            </div>
        
     </div>
 </div>
