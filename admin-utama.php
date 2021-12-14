@@ -41,7 +41,7 @@
 </head>
 
 <body id="page-top">
-
+    <? session_start()?>
     <!-- Page Wrapper -->
     <div id="wrapper">
 
@@ -51,7 +51,7 @@
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="/utama">
                 <div class="sidebar-brand-icon">
-                    <img src="{{ asset('img/logo.jpg') }}" width="50" height="50">
+                    <img src="./img/logo.jpg" width="50" height="50">
                 </div>
                 <div class="sidebar-brand-text mx-3">Hantarin</div>
             </a>
@@ -76,13 +76,13 @@
 
             <!-- Nav Item - Charts -->
             <li class="nav-item">
-                <a class="nav-link" href="/transaksi">
+                <a class="nav-link" href="./admin-transaksi.php">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Riwayat Transaksi</span></a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="/tambah">
+                <a class="nav-link" href="./admin-tambah.php">
                     <i class="fas fa-fw fa-wrench"></i>
                     <span>Tambah Produk</span></a>
             </li>
@@ -105,7 +105,7 @@
             
             <!-- Nav Item - Logout -->
             <li class="nav-item">
-                <a class="nav-link" href="/">
+                <a class="nav-link" type="button" href="./php/check_logout.php">
                     <i class="fas fa-sign-out-alt"></i>
                     <span>Log Out</span></a>
             </li>   
@@ -231,7 +231,7 @@
                                             </div>
                                             <div class="row no-gutters align-items-center">
                                                 <div class="col-auto">
-                                                    <div class="h5 mb-0 mr-3 font-weight-bold text-gray-800">9 Produk</div>
+                                                    <div class="h5 mb-0 ml-3 font-weight-bold text-gray-800">9 Produk</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -308,26 +308,6 @@
     <a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>
     </a>
-
-    <!-- Logout Modal-->
-    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
-                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
-                </div>
-                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
-                <div class="modal-footer">
-                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                    <a class="btn btn-primary" href="login.html">Logout</a>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Bootstrap core JavaScript-->
     <script src="admin/vendor/jquery/jquery.min.js"></script>
