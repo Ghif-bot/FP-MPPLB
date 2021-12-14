@@ -69,7 +69,7 @@
           <li><a class="nav-link scrollto" href="#portfolio">Home</a></li>
           <li><a class="nav-link scrollto" href="#">Profil</a></li>
           <li><a class="nav-link scrollto" href="./php/check_logout.php">Log Out</a></li>
-          <li><a class="getstarted scrollto" href="/daftar">Daftar Pesanan</a></li>
+          <li><a class="getstarted scrollto" href="./daftar.php">Daftar Pesanan</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->

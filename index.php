@@ -46,9 +46,9 @@
     <div class="container">
         <?php 
         if(isset($_GET['pesan'])){
-            if($_GET['pesan=gagal']){
+            if($_GET['pesan'] == "gagal"){
                 echo "<div class='alert alert-danger' role='alert' align='center'>Silahkan cek password dan email anda</div>";
-            }elseif($_GET['pesan=berhasil']){
+            }else if($_GET['pesan'] == "berhasil"){
                 echo "<div class='alert alert-success role='alert' align='center'>Berhasil registrasi, silahkan anda login</div>";
             }
         }
